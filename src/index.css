@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+.spacing {
+  width: 80%;
+  margin: auto;
+}
+
+.body-background {
+  background: url(/public/images/bg4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* <-------------------Header------------------> */
+
+.header {
+  width: 80%;
+  margin: auto;
+
+}
+
+.left_home {
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+button.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid rgb(50 119 171);
+  padding: 10px;
+  border-radius: 21px;
+  cursor: pointer;
+}
+
+.navList li {
+  font-size: 17px;
+}
+
+/* < ---------------------------- Home Page --------------------> */
+
+.card {
+  border: 1px solid;
+  width: 320px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.05) 25%,
+      rgba(0, 0, 0, 0.4) 100%),
+    linear-gradient(145deg, #0c1226, #020617);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+
+}
+
+
+/* <---------------------------ABout page --------------------------------> */
+
+.feautureCard {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+button.filterBtn {
+
+  border: 1px solid white;
+  padding: 10px 15px;
+  width: 110px;
+  border-radius: 10px;
+  cursor: pointer;
+}
