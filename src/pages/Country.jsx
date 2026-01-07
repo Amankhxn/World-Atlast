@@ -48,9 +48,9 @@ const Country = () => {
     <section className='spacing'>
       <div className="features mt-8 h-20 flex items-center p-6 justify-between">
 
-        <input type="text" placeholder='Search..' value={search} onChange={(e) => setSearch(e.target.value)} className='border px-4 py-2 w-[25%] rounded-xl' />
+        <input type="text" placeholder='Search..' value={search} onChange={(e) => setSearch(e.target.value)} className='border px-4 py-2 min-w-[200px] w-[25%] rounded-xl' />
 
-        <div className="btns flex gap-4">
+        <div className="btns hidden md:flex gap-4">
           <button className='filterBtn' onClick={() => SortCountry("asc")}>Asc</button>
           <button className='filterBtn' onClick={() => SortCountry("dsc")}>Dsc</button>
         </div>

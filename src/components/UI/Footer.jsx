@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className=' bg-[#0B0F19]/90 backdrop-blur-md shadow-lg'>
       <div className='w-[80%] mx-auto mt-8'>
-        <div className="upper_footer flex justify-between flex-wrap">
+        <div className="upper_footer flex flex-col md:flex-row justify-between flex-wrap">
 
           {
             upperFooter.map((data) => {
@@ -29,20 +29,20 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="lower_footer flex  justify-between bg-gray-700 py-2 px-40 " >
-      
+      <div className="lower_footer flex flex-col md:flex-row gap-4 bg-gray-700 py-2 px-20 md:px-40 " >
 
-          <div className="left-footer">
-            <p className='text-sm'>Copyright @ 2025. All Rights Reserved <span className='text-blue-400'> KhanAman</span></p>
-          </div>
-          <div className="right-footer">
-            <ul className='flex gap-8 text-sm '>
-              <li><NavLink>Home</NavLink></li>
-              <li><NavLink>Social</NavLink></li>
-              <li><NavLink>Contact</NavLink></li>
-            </ul>
-          </div>
-      
+
+        <div className="left-footer">
+          <p className='text-sm'>Copyright @ 2025. All Rights Reserved <span className='text-blue-400'> KhanAman</span></p>
+        </div>
+        <div className="right-footer">
+          <ul className='flex gap-8 text-sm '>
+            <li><NavLink>Home</NavLink></li>
+            <li><NavLink>Social</NavLink></li>
+            <li><NavLink>Contact</NavLink></li>
+          </ul>
+        </div>
+
       </div>
     </div>
   )

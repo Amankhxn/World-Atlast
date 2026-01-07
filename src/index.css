@@ -54,7 +54,6 @@ button.btn {
 
 .card {
   border: 1px solid;
-  width: 320px;
   padding: 15px;
   display: flex;
   flex-direction: column;

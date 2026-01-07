@@ -5,16 +5,16 @@ import FactCard from '../components/UI/FactCard';
 
 const About = () => {
   return (
-    <div className='mt-8 flex flex-col gap-20 spacing'>
+    <div className='pt-10 flex flex-col gap-20 spacing'>
       <div className="about1 ">
         <h1 className='text-5xl text-center'>About<span className='text-blue-400 font-semibold'> World AtLast</span> </h1>
-        <p className='text-center mt-6 text-xl'>World Atlas is designed to help you explore the world with ease. Our platform brings together essential information about countries, cultures, and global facts in a clean and interactive way. Whether you're learning, researching, or simply curious, World Atlas helps you discover the beauty, diversity, and history of every nation through a modern and engaging experience.</p>
+        <p className='text-center mt-6 text-md md:text-xl'>World Atlas is designed to help you explore the world with ease. Our platform brings together essential information about countries, cultures, and global facts in a clean and interactive way. Whether you're learning, researching, or simply curious, World Atlas helps you discover the beauty, diversity, and history of every nation through a modern and engaging experience.</p>
       </div>
 
 
       <div className="features flex flex-col gap-10">
         <h1 className='text-4xl font-semibold text-center'>Features</h1>
-        <div className="featureCards grid grid-cols-2 gap-10 ">
+        <div className="featureCards grid grid-cols-1 md:grid-cols-2  gap-10 ">
 
 
           {
@@ -30,11 +30,11 @@ const About = () => {
       </div>
 
 
-      <div className="developer flex justify-center items-center ">
-        <div className="left-dev w-[50%] flex justify-center items-center ">
-          <img src="/images/Developer.png" alt="developer" className='rounded-full h-[300px] ' />
+      <div className="developer flex justify-center items-center flex-col-reverse md:flex-row gap-10">
+        <div className="left-dev w-full md:w-[50%] flex justify-center items-center ">
+          <img src="/images/Developer.png" alt="developer" className='rounded-full w-9/12 ' />
         </div>
-        <div className="right-dev w-[50%] flex flex-col gap-14">
+        <div className="right-dev w-full md:w-[50%] flex flex-col gap-14">
           <h1 className='text-4xl font-semibold'>Meet the Developer</h1>
           <p>Hi! I’m Aman, the developer behind World Atlas.
             I love creating clean, modern, and useful web applications. World Atlas was built to help people explore countries, learn interesting facts, and enjoy a smooth UI experience while using the website.

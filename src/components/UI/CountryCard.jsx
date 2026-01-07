@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const CountryCard = ({ country }) => {
     const { region, population, capital, name, flags } = country;
     return (
-        <div className='card '>
+        <div className='card w-[320px] '>
             <div>
 
                 <img src={flags.svg} alt="" className='w-full h-[130px] object-cover rounded flex items-center justify-center' />
