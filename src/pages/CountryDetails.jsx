@@ -19,15 +19,15 @@ const CountryDetails = () => {
 
     return (
 
-        <div className=' backdrop-blur-xs h-[500px] mt-8 spacing'>
+        <div className=' backdrop-blur-xs  mt-8 spacing'>
             {
                 country && (
                     <>
-                        <div className="mainCountry flex flex-wrap p-5 gap-20 relative h-[500px]">
-                            <div className="lCountry w-1/3   flex items-center justify-center">
+                        <div className="mainCountry flex flex-wrap flex-col md:flex-row p-5 gap-10 relative  ">
+                            <div className="lCountry w-full  lg:w-[25%]  flex items-center justify-center">
                                 <img src={country.flags.svg} alt={country.flags.alt} className='h-[250px] rounded-2xl' />
                             </div>
-                            <div className="rCountry w-1/3">
+                            <div className="rCountry py-10 w-full lg:w-[60%]">
                                 <h1 className='text-3xl font-semibold'>{country.name.official}</h1>
                                 <div className='flex flex-col gap-6 mt-8'>
 
@@ -42,7 +42,7 @@ const CountryDetails = () => {
                                 </div>
 
                                 <NavLink to={"/country"}>
-                                    <button className='btn absolute bottom-5 right-5 w-[150px]'>Go Back</button>
+                                    <button className='btn absolute bottom-0 right-0 w-[150px]'>Go Back</button>
                                 </NavLink>
 
                             </div>

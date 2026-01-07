@@ -46,28 +46,32 @@ const Country = () => {
 
   return (
     <section className='spacing'>
-      <div className="features mt-8 h-20 flex items-center p-6 justify-between">
+      <div className="features mt-8 h-32 flex flex-col md:flex-row items-center gap-6 p-6 justify-between">
 
-        <input type="text" placeholder='Search..' value={search} onChange={(e) => setSearch(e.target.value)} className='border px-4 py-2 min-w-[200px] w-[25%] rounded-xl' />
+        <input type="text" placeholder='Search..' value={search} onChange={(e) => setSearch(e.target.value)} className='border px-4 py-2  w-full max-w-md  rounded-xl' />
 
-        <div className="btns hidden md:flex gap-4">
-          <button className='filterBtn' onClick={() => SortCountry("asc")}>Asc</button>
-          <button className='filterBtn' onClick={() => SortCountry("dsc")}>Dsc</button>
+        <div className='flex gap-10'>
+          <div className="btns  flex gap-4">
+            <button className='filterBtn' onClick={() => SortCountry("asc")}>Asc</button>
+            <button className='filterBtn' onClick={() => SortCountry("dsc")}>Dsc</button>
+          </div>
+
+          <select
+            className="border px-4 py-2  rounded-xl bg-black"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+          >
+            <option value="All">All</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Antarctic">Antarctic</option>
+          </select>
+
         </div>
 
-        <select
-          className="border px-4 py-2 rounded-xl bg-black"
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-        >
-          <option value="All">All</option>
-          <option value="Africa">Africa</option>
-          <option value="Americas">Americas</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europe</option>
-          <option value="Oceania">Oceania</option>
-          <option value="Antarctic">Antarctic</option>
-        </select>
 
       </div>
       <div className='CountryCards flex flex-wrap gap-20 justify-around mt-8'>
